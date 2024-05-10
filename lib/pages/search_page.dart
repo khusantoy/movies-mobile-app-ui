@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:glassmorphism/glassmorphism.dart';
+import 'package:movies_mobile_app/pages/result_search_page.dart';
 
 class SearchPage extends StatelessWidget {
   @override
@@ -64,29 +65,39 @@ class SearchPage extends StatelessWidget {
                 SizedBox(
                   height: 10.h,
                 ),
-                const Wrap(
+                Wrap(
                   spacing: 10,
                   runSpacing: 5,
                   children: [
-                    Chip(
-                      label: Text(
-                        "Marvel",
-                        style: TextStyle(
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ResultSearchPage(),
+                          ),
+                        );
+                      },
+                      child: const Chip(
+                        label: Text(
+                          "Marvel",
+                          style: TextStyle(
+                            color: Colors.blue,
+                          ),
+                        ),
+                        avatar: Icon(
+                          CupertinoIcons.clock,
                           color: Colors.blue,
                         ),
-                      ),
-                      avatar: Icon(
-                        CupertinoIcons.clock,
-                        color: Colors.blue,
-                      ),
-                      backgroundColor: Color(0xFF0F0A32),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(20),
+                        backgroundColor: Color(0xFF0F0A32),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(20),
+                          ),
                         ),
                       ),
                     ),
-                    Chip(
+                   const  Chip(
                       label: Text(
                         "Captain america",
                         style: TextStyle(
@@ -104,7 +115,7 @@ class SearchPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Chip(
+                   const  Chip(
                       label: Text(
                         "Captain Marvel",
                         style: TextStyle(
@@ -122,7 +133,7 @@ class SearchPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Chip(
+                    const Chip(
                       label: Text(
                         "Thor",
                         style: TextStyle(

@@ -32,7 +32,7 @@ class ResultSearchPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(30),
                         borderSide: BorderSide.none,
                       ),
-                      hintText: "Search by title, genre, actor",
+                      hintText: "Comedy",
                       hintStyle: TextStyle(
                         color: const Color(0xFFAAAAB9),
                         fontSize: 16.sp,
@@ -40,6 +40,15 @@ class ResultSearchPage extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                         decorationThickness: 6,
                       ),
+                      suffixIcon: Padding(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 10.w, vertical: 5.h),
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.clear),
+                        ),
+                      ),
+                      suffixIconColor: const Color(0xFFAAAAB9),
                       prefixIcon: Padding(
                         padding: EdgeInsets.only(left: 25.w, right: 15.w),
                         child: const Icon(
@@ -64,123 +73,121 @@ class ResultSearchPage extends StatelessWidget {
                 SizedBox(
                   height: 15.h,
                 ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Wrap(
-                    spacing: 10.w,
-                    children: [
-                      Container(
-                        width: 100.w,
-                        height: 140.w,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                            image: AssetImage("assets/images/ladybug.jpg"),
-                            fit: BoxFit.cover,
-                          ),
+                Wrap(
+                  spacing: 10.w,
+                  runSpacing: 10.h,
+                  children: [
+                    Container(
+                      width: 100.w,
+                      height: 140.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/ladybug.jpg"),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      Container(
-                        width: 100.w,
-                        height: 140.w,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                            image: AssetImage("assets/images/ladybug.jpg"),
-                            fit: BoxFit.cover,
-                          ),
+                    ),
+                    Container(
+                      width: 100.w,
+                      height: 140.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/ladybug.jpg"),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      Container(
-                        width: 100.w,
-                        height: 140.w,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                            image: AssetImage("assets/images/ladybug.jpg"),
-                            fit: BoxFit.cover,
-                          ),
+                    ),
+                    Container(
+                      width: 100.w,
+                      height: 140.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/ladybug.jpg"),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      Container(
-                        width: 100.w,
-                        height: 140.w,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                            image: AssetImage("assets/images/ladybug.jpg"),
-                            fit: BoxFit.cover,
-                          ),
+                    ),
+                    Container(
+                      width: 100.w,
+                      height: 140.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/ladybug.jpg"),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      Container(
-                        width: 100.w,
-                        height: 140.w,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                            image: AssetImage("assets/images/ladybug.jpg"),
-                            fit: BoxFit.cover,
-                          ),
+                    ),
+                    Container(
+                      width: 100.w,
+                      height: 140.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/ladybug.jpg"),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      Container(
-                        width: 100.w,
-                        height: 140.w,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                            image: AssetImage("assets/images/ladybug.jpg"),
-                            fit: BoxFit.cover,
-                          ),
+                    ),
+                    Container(
+                      width: 100.w,
+                      height: 140.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/ladybug.jpg"),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      Container(
-                        width: 100.w,
-                        height: 140.w,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                            image: AssetImage("assets/images/ladybug.jpg"),
-                            fit: BoxFit.cover,
-                          ),
+                    ),
+                    Container(
+                      width: 100.w,
+                      height: 140.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/ladybug.jpg"),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      Container(
-                        width: 100.w,
-                        height: 140.w,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                            image: AssetImage("assets/images/ladybug.jpg"),
-                            fit: BoxFit.cover,
-                          ),
+                    ),
+                    Container(
+                      width: 100.w,
+                      height: 140.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/ladybug.jpg"),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      Container(
-                        width: 100.w,
-                        height: 140.w,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                            image: AssetImage("assets/images/ladybug.jpg"),
-                            fit: BoxFit.cover,
-                          ),
+                    ),
+                    Container(
+                      width: 100.w,
+                      height: 140.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/ladybug.jpg"),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      Container(
-                        width: 100.w,
-                        height: 140.w,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                            image: AssetImage("assets/images/ladybug.jpg"),
-                            fit: BoxFit.cover,
-                          ),
+                    ),
+                    Container(
+                      width: 100.w,
+                      height: 140.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/ladybug.jpg"),
+                          fit: BoxFit.cover,
                         ),
-                      )
-                    ],
-                  ),
+                      ),
+                    )
+                  ],
                 ),
               ],
             ),

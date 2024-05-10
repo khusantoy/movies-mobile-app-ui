@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:glassmorphism/glassmorphism.dart';
+import 'package:movies_mobile_app/pages/download_page.dart';
 import 'package:movies_mobile_app/pages/result_search_page.dart';
 
 class SearchPage extends StatelessWidget {
@@ -97,7 +98,7 @@ class SearchPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                   const  Chip(
+                    const Chip(
                       label: Text(
                         "Captain america",
                         style: TextStyle(
@@ -115,7 +116,7 @@ class SearchPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                   const  Chip(
+                    const Chip(
                       label: Text(
                         "Captain Marvel",
                         style: TextStyle(
@@ -476,7 +477,14 @@ class SearchPage extends StatelessWidget {
                 ),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DownloadPage(),
+                    ),
+                  );
+                },
                 icon: const Icon(
                   CupertinoIcons.arrow_down_doc,
                   size: 30,

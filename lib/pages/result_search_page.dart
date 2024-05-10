@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:glassmorphism/glassmorphism.dart';
+import 'package:movies_mobile_app/pages/download_page.dart';
 
 class ResultSearchPage extends StatelessWidget {
   @override
@@ -250,7 +251,14 @@ class ResultSearchPage extends StatelessWidget {
                 ),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DownloadPage(),
+                    ),
+                  );
+                },
                 icon: const Icon(
                   CupertinoIcons.arrow_down_doc,
                   size: 30,
